@@ -32,7 +32,7 @@ jobs:
 
     - name: always
       if: always()
-      run: echo "I always run! Because ${{ amazingNumber }} is amazing"
+      run: echo "I always run! Because ${{ env.amazingNumber }} is amazing"
 
   github-context:
     runs-on: ubuntu-latest
