@@ -10,7 +10,7 @@ jobs:
     - name: Build solution
       run: dotnet build
 
-  context:
+  github-context:
     runs-on: ubuntu-latest
     steps:
     - name: Print GitHub context info
@@ -19,3 +19,15 @@ jobs:
       run: echo "${{github.repository}}"
     - name: Print event
       run: echo "${{github.event_name}}"
+
+  job-context:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print job context
+      run: echo "${{ toJSON(job) }}"
+    - name: Print runner context
+      run: echo "${{ toJSON(runner) }}
+    - name: Print job status
+      run: echo "${{ toJSON(job.status) }}"
+    - name: Print runner os
+      run: echo "${{ toJSON(runner.os) }}"
