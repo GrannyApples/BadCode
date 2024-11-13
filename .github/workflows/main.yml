@@ -1,11 +1,24 @@
 name: Demo of variables and context
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      should-fail:
+        description: 'Shall the step fail? (yes/no)'
+        required: true
+        type: string
+        default: 'no'
 
 jobs:
   build-project:
     runs-on: ubuntu-latest
     steps:
+    - name: Step That can fail
+      run: |
+        echo "Failcheck..."
+        if [ "${{inputs.should-fail}}" = "yes" ]; then
+          exit 1
+        fi
     - uses: actions/checkout@v4
     - name: Build solution
       run: dotnet build
