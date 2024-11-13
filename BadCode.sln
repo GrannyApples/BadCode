@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceSender", "InvoiceSender\InvoiceSender.csproj", "{2FD3A653-4A15-4BAF-A7A4-599AB7F21225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesReport", "SalesReport\SalesReport.csproj", "{3A4235B4-C65B-44E5-9F67-F4FBF6F62F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceSender.Test", "InvoiceSender.Test\InvoiceSender.Test.csproj", "{4EA9D516-6CE7-454D-A3A7-C7C5A3EBD41B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD3A653-4A15-4BAF-A7A4-599AB7F21225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD3A653-4A15-4BAF-A7A4-599AB7F21225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD3A653-4A15-4BAF-A7A4-599AB7F21225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD3A653-4A15-4BAF-A7A4-599AB7F21225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A4235B4-C65B-44E5-9F67-F4FBF6F62F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4235B4-C65B-44E5-9F67-F4FBF6F62F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4235B4-C65B-44E5-9F67-F4FBF6F62F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4235B4-C65B-44E5-9F67-F4FBF6F62F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA9D516-6CE7-454D-A3A7-C7C5A3EBD41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA9D516-6CE7-454D-A3A7-C7C5A3EBD41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA9D516-6CE7-454D-A3A7-C7C5A3EBD41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA9D516-6CE7-454D-A3A7-C7C5A3EBD41B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

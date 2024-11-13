@@ -396,3 +396,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# IDEA stuff
+.idea/
+.vs/
+.vscode/
+*.DotSettings.user
+
+# .net stuff
+*/[Bb]in/
+*/[Oo]bj/
