@@ -23,6 +23,14 @@ jobs:
     - name: Build solution
       run: dotnet build
 
+    - name: on-failure
+      if: failure()
+      run: echo "oops"
+
+    - name: always
+      if: always()
+      run: echo "I always run!"
+
   github-context:
     runs-on: ubuntu-latest
     steps:
