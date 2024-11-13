@@ -1,0 +1,21 @@
+name: Demo of variables and context
+
+on: workflow_dispatch
+
+jobs:
+  build-project:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build solution
+      run: dotnet build
+
+  context:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print GitHub context info
+      run: echo "${{toJson(github)}}"
+    - name: Print repo name
+      run: echo "${{github.repository}}"
+    - name: Print event
+      run: echo "${{github.event_name}}"
