@@ -19,15 +19,15 @@ jobs:
       run: echo "${{github.repository}}"
     - name: Print event
       run: echo "${{github.event_name}}"
-
-  job-context:
+      
+  job-and-runner-context:
     runs-on: ubuntu-latest
     steps:
     - name: Print job context
       run: echo "${{ toJSON(job) }}"
     - name: Print runner context
-      run: echo "${{ toJSON(runner) }}
+      run: echo "${{ toJSON(runner) }}"
     - name: Print job status
-      run: echo "${{ toJSON(job.status) }}"
-    - name: Print runner os
-      run: echo "${{ toJSON(runner.os) }}"
+      run: echo "${{ job.status }}"
+    - name: Print runner OS
+      run: echo "${{ runner.os }}"
